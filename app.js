@@ -2,8 +2,6 @@ const express=require("express");
 const app=express();
 const bodyParser=require("body-parser");
 const mongoose=require("mongoose");
-const e = require("express");
-const { static } = require("express");
 app.use(express.static("public"));
 app.set("view engine","ejs");
 app.use(bodyParser.urlencoded({extended:true}));
